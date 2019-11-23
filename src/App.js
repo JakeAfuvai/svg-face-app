@@ -1,5 +1,6 @@
 import React, { useState} from "react"
 import Eye from "./Eye"
+import Nose from "./Nose"
 import Mouth from "./Mouth"
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
             <svg height="80vh" width="70vw" style={{background: "yellow"}}>
                 <Eye width={eyeWidth} height={eyeHeight} x={100} y={100}/>
                 <Eye width={eyeWidth} height={eyeHeight} x={300} y={100}/>
+                <Nose width={50} height={75} x={200} y={200} />
                 <Mouth width={mouthWidth} height={mouthHeight}/>
             </svg>
             <input 
@@ -24,7 +26,7 @@ const App = () => {
             <input 
                 type="range"
                 min={1}
-                max={100}
+                max={25}
                 value={mouthHeight}
                 onChange={e=>setMouthHeight(e.target.value)}
             /> Mouth Height

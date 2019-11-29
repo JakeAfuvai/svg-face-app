@@ -1,4 +1,5 @@
 import React, { useState} from "react"
+import Face from "./Face"
 import Eye from "./Eye"
 import Nose from "./Nose"
 import Mouth from "./Mouth"
@@ -11,6 +12,7 @@ const App = () => {
     return (
         <>
             <svg height="80vh" width="70vw" style={{background: "yellow"}}>
+                <Face />
                 <Eye width={eyeWidth} height={eyeHeight} x={100} y={100}/>
                 <Eye width={eyeWidth} height={eyeHeight} x={300} y={100}/>
                 <Nose width={50} height={75} x={200} y={200} />
